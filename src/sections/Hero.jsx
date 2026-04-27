@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowDown, Download } from '../components/Icons';
+import video from "../assets/0427.mp4";
 
 import resumePdf from '../assets/resume.pdf';
 
@@ -31,7 +32,7 @@ export default function Hero() {
           playsInline
           className="absolute top-0 left-0 w-full h-full object-cover object-[center_15%] grayscale opacity-60 transition-opacity duration-1000"
         >
-          <source src="/src/assets/0427.mp4" type="video/mp4" />
+          <source src={video} type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-primary/40 backdrop-blur-[1px]" />
         <div className="absolute inset-0 bg-gradient-to-b from-primary/20 via-transparent to-primary/80" />
